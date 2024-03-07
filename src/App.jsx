@@ -1,3 +1,4 @@
+import Congratulations from "./Congratulations"
 import Gallery from "./Gallery"
 
 function App() {
@@ -5,6 +6,7 @@ function App() {
   return (
     <>
       <Gallery />
+      <Congratulations />
     </>
   )
 }

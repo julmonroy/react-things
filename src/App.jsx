@@ -1,10 +1,10 @@
-import Profile from "./Profile"
+import Gallery from "./Gallery"
 
 function App() {
 
   return (
     <>
-      <Profile />
+      <Gallery />
     </>
   )
 }

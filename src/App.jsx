@@ -1,34 +1,48 @@
-function Drink({ name }) {
-  let part, caffeine, age;
-  if (name === 'tea') {
-    part = 'leaf';
-    caffeine = '15–70 mg/cup';
-    age = '4,000+ years';
-  } else if (name === 'coffee') {
-    part = 'bean';
-    caffeine = '80–185 mg/cup';
-    age = '1,000+ years';
-  }
-  return (
-    <section>
-      <h1>{name}</h1>
-      <dl>
-        <dt>Part of plant</dt>
-        <dd>{part}</dd>
-        <dt>Caffeine content</dt>
-        <dd>{caffeine}</dd>
-        <dt>Age</dt>
-        <dd>{age}</dd>
-      </dl>
-    </section>
-  );
-}
+import { people } from './data.js';
+import { getImageUrl } from './utils.js';
 
-export default function DrinkList() {
-  return (
-    <div>
-      <Drink name="tea" />
-      <Drink name="coffee" />
-    </div>
+export default function List() {
+  const chemisList = people.filter(person => 
+    person.profession === 'chemist');
+
+  const elselist = people.filter(person => 
+    person.profession !== 'chemist');
+
+    return (
+    <article>
+      <h1>Chemists</h1>
+      <ul>
+        {chemisList.map(person => 
+          <li key={person.id}>
+            <img
+              src={getImageUrl(person)}
+              alt={person.name}
+            />
+            <p>
+              <b>{person.name}:</b>
+              {' ' + person.profession + ' '}
+              known for {person.accomplishment}
+            </p>
+          </li>
+        )}
+      </ul>
+      <h1>Everyone else</h1>
+      <ul>
+        {elselist.map(person => 
+          <li key={person.id}>
+            <img
+              src={getImageUrl(person)}
+              alt={person.name}
+            />
+            <p>
+              <b>{person.name}:</b>
+              {' ' + person.profession + ' '}
+              known for {person.accomplishment}
+            </p>
+          </li>
+        )}
+      </ul>
+   
+    </article>
   );
-}
+        }

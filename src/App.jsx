@@ -1,27 +1,13 @@
-import { recipes } from './data.js';
+import Congratulations from "./Congratulations";
+import RecipeList from "./RecipeList";
 
-function Recipe({ id, name, ingredients }) {
+function App() {
   return (
-    <div>
-      <h2>{name}</h2>
-      <ul>
-        {ingredients.map(ingredient =>
-          <li key={ingredient}>
-            {ingredient}
-          </li>
-        )}
-      </ul>
-    </div>
-  );
+<>
+<Congratulations />
+<RecipeList />
+</>
+  )
 }
 
-export default function RecipeList() {
-  return (
-    <div>
-      <h1>Recipes</h1>
-      {recipes.map(recipe =>
-        <Recipe {...recipe} key={recipe.id} />
-      )}
-    </div>
-  );
-}
+export default App;

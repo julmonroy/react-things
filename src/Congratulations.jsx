@@ -5,6 +5,6 @@ function Congratulations() {
       </>
     )
     }
-  export default Congratulations 
+  export default Congratulations;
   
   

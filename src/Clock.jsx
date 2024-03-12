@@ -11,7 +11,7 @@ export default function Clock({ time }) {
     <h1 className={className}>
       {time.toLocaleTimeString()}
     </h1>
-    <h2>{hours}</h2>
+    
     </>
     );
 }

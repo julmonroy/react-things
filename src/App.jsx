@@ -3,10 +3,13 @@ import Clock from "./Clock";
 import Congratulations from "./Congratulations";
 import Poem from "./Poem";
 import RecipeList from "./RecipeList";
+import App1 from "./UseTime";
+
 
 function App() {
   return (
 <>
+<App1 />
 <Clock  time={ new Date()}/> 
 <Congratulations />
 <Poem />
@@ -22,6 +25,7 @@ function App() {
       }} />
 </>
   )
+
 }
 
 export default App;

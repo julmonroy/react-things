@@ -5,11 +5,12 @@ import Poem from "./Poem";
 import RecipeList from "./RecipeList";
 import App1 from "./UseTime";
 import LightSwitch from "./LightSwitch.jsx";
-
+import Responding2Events from "./Responding2Events";
 
 function App() {
   return (
 <>
+<Responding2Events  />
 <LightSwitch />
 <App1 />
 <Clock  time={ new Date()}/> 

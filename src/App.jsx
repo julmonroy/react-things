@@ -4,11 +4,13 @@ import Congratulations from "./Congratulations";
 import Poem from "./Poem";
 import RecipeList from "./RecipeList";
 import App1 from "./UseTime";
+import LightSwitch from "./LightSwitch.jsx";
 
 
 function App() {
   return (
 <>
+<LightSwitch />
 <App1 />
 <Clock  time={ new Date()}/> 
 <Congratulations />

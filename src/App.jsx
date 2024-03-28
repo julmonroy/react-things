@@ -7,10 +7,12 @@ import App1 from "./UseTime";
 import LightSwitch from "./LightSwitch.jsx";
 import Responding2Events from "./Responding2Events";
 import Gallery from "./Gallery";
+import Form from "./Form.jsx";
 
 function App() {
   return (
 <>
+<Form />
 <Gallery />
 <Responding2Events  />
 <LightSwitch />

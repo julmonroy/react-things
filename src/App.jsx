@@ -6,10 +6,12 @@ import RecipeList from "./RecipeList";
 import App1 from "./UseTime";
 import LightSwitch from "./LightSwitch.jsx";
 import Responding2Events from "./Responding2Events";
+import Gallery from "./Gallery";
 
 function App() {
   return (
 <>
+<Gallery />
 <Responding2Events  />
 <LightSwitch />
 <App1 />

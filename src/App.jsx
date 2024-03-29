@@ -9,10 +9,12 @@ import Responding2Events from "./Responding2Events";
 import Gallery from "./Gallery";
 import Form from "./Form.jsx";
 import FeedbackForm from "./FeedbackForm.jsx";
+import FeedbackForm2 from "./FeedbackForm2.jsx";
 
 function App() {
   return (
 <>
+<FeedbackForm2 />
 <FeedbackForm />
 <Form />
 <Gallery />

@@ -8,10 +8,12 @@ import LightSwitch from "./LightSwitch.jsx";
 import Responding2Events from "./Responding2Events";
 import Gallery from "./Gallery";
 import Form from "./Form.jsx";
+import FeedbackForm from "./FeedbackForm.jsx";
 
 function App() {
   return (
 <>
+<FeedbackForm />
 <Form />
 <Gallery />
 <Responding2Events  />

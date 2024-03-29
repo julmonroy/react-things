@@ -10,10 +10,12 @@ import Gallery from "./Gallery";
 import Form from "./Form.jsx";
 import FeedbackForm from "./FeedbackForm.jsx";
 import FeedbackForm2 from "./FeedbackForm2.jsx";
+import TrafficLight from "./TrafficLight.jsx";
 
 function App() {
   return (
 <>
+<TrafficLight  />
 <FeedbackForm2 />
 <FeedbackForm />
 <Form />

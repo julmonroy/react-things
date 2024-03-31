@@ -11,10 +11,12 @@ import Form from "./Form.jsx";
 import FeedbackForm from "./FeedbackForm.jsx";
 import FeedbackForm2 from "./FeedbackForm2.jsx";
 import TrafficLight from "./TrafficLight.jsx";
+import RequestTracker from "./RequestTracker.jsx";
 
 function App() {
   return (
 <>
+<RequestTracker />
 <TrafficLight  />
 <FeedbackForm2 />
 <FeedbackForm />

@@ -14,10 +14,12 @@ import TrafficLight from "./TrafficLight.jsx";
 import RequestTracker from "./RequestTracker.jsx";
 import App3 from "./App3.jsx";
 import ShoppingCart from "./ShoppingCart.jsx";
+import TaskApp from "./TaskApp.jsx";
 
 function App() {
   return (
 <>
+<TaskApp />
 <ShoppingCart />
 <App3 />
 <RequestTracker />

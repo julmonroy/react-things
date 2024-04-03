@@ -13,11 +13,12 @@ import FeedbackForm2 from "./FeedbackForm2.jsx";
 import TrafficLight from "./TrafficLight.jsx";
 import RequestTracker from "./RequestTracker.jsx";
 import App3 from "./App3.jsx";
+import ShoppingCart from "./ShoppingCart.jsx";
 
 function App() {
   return (
 <>
-
+<ShoppingCart />
 <App3 />
 <RequestTracker />
 <TrafficLight  />

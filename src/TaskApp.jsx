@@ -5,7 +5,7 @@ import TaskList from './TaskList.jsx';
 let nextId = 3;
 const initialTodos = [
     { id: 0, title: 'Buy milk', done: true },
-    { id: 1, title: 'Eat tacos', done: false },
+    { id: 1, title: 'Eat tacos', done: true },
     { id: 2, title: 'Brew tea', done: false },
 ];
 
